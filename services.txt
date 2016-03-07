@@ -1,0 +1,38 @@
+iprdump.service - LSB: Start the ipr dump daemon
+   Loaded: loaded (/etc/rc.d/init.d/iprdump)
+   Active: active (running) since Mon 2016-03-07 08:36:37 EST; 3h 19min ago
+  Process: 875 ExecStart=/etc/rc.d/init.d/iprdump start (code=exited, status=0/SUCCESS)
+ Main PID: 888 (iprdump)
+   CGroup: /system.slice/iprdump.service
+           └─888 /sbin/iprdump --daemon
+
+Mar 07 08:36:36 localhost.localdomain systemd[1]: Starting LSB: Start the ipr dump daemon...
+Mar 07 08:36:36 localhost.localdomain iprdump[875]: Starting iprdump: [  OK  ]
+Mar 07 08:36:37 localhost.localdomain systemd[1]: Started LSB: Start the ipr dump daemon.
+iprinit.service - LSB: Start the ipr init daemon
+   Loaded: loaded (/etc/rc.d/init.d/iprinit)
+   Active: active (running) since Mon 2016-03-07 08:36:36 EST; 3h 19min ago
+  Process: 802 ExecStart=/etc/rc.d/init.d/iprinit start (code=exited, status=0/SUCCESS)
+ Main PID: 855 (iprinit)
+   CGroup: /system.slice/iprinit.service
+           └─855 /sbin/iprinit --daemon
+
+Mar 07 08:36:34 localhost.localdomain systemd[1]: Starting LSB: Start the ipr init daemon...
+Mar 07 08:36:36 localhost.localdomain iprinit[802]: Starting iprinit: [  OK  ]
+Mar 07 08:36:36 localhost.localdomain systemd[1]: Started LSB: Start the ipr init daemon.
+iprupdate.service - LSB: Start the iprupdate utility
+   Loaded: loaded (/etc/rc.d/init.d/iprupdate)
+   Active: active (running) since Mon 2016-03-07 08:36:36 EST; 3h 19min ago
+  Process: 801 ExecStart=/etc/rc.d/init.d/iprupdate start (code=exited, status=0/SUCCESS)
+ Main PID: 857 (iprupdate)
+   CGroup: /system.slice/iprupdate.service
+           └─857 /sbin/iprupdate --daemon
+
+Mar 07 08:36:34 localhost.localdomain systemd[1]: Starting LSB: Start the iprupdate utility...
+Mar 07 08:36:36 localhost.localdomain iprupdate[801]: Starting iprupdate: [  OK  ]
+Mar 07 08:36:36 localhost.localdomain systemd[1]: Started LSB: Start the iprupdate utility.
+netconsole module not loaded
+Configured devices:
+lo eno16777736
+Currently active devices:
+lo eno16777736
