@@ -1,0 +1,13 @@
+---
+ - hosts: ntp
+   user: root
+
+   tasks:
+    - name: Install NTP
+      action: yum name=ntp state=installed
+
+    - name: Enable NTP
+      service: 
+       name=ntpd 
+       state=started  
+       enabled=yes

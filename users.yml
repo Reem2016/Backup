@@ -1,0 +1,47 @@
+---
+ - hosts: localhost
+   user: root
+   connection: /bin/bash
+
+   tasks:
+   - user:
+      uid=200
+      name=Obama
+      comment="Barack Obama"
+      password=istlabs
+      groups=Democrats
+
+   - user:
+      uid=201
+      name=Bush
+      comment="George W. Bush"
+      password=istlabs
+      groups=Democrats
+
+   - user:
+      uid=202
+      name=Clinton
+      comment="Bill Clinton"
+      password=istlabs
+      groups=Republicans
+
+   - user:
+      uid=203
+      name=Reagan
+      comment="Ronald Reagan"
+      password=istlabs
+      groups=Republicans
+
+   - user:
+      uid=204
+      name=Carter
+      comment="Jimmy Carter"
+      password=istlabs
+      groups=Independents
+
+   - user:
+      uid=205
+      name=Ford
+      comment="Gerald Ford"
+      password=istlabs
+      groups=Independents

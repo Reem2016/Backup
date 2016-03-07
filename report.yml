@@ -1,0 +1,8 @@
+---
+ - hosts: localhost
+   user: root
+
+   tasks:
+    
+    - name: Hello yourself
+      script: report.sh                   
