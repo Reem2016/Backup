@@ -1,25 +1,8 @@
-language: node_js
-
-node_js:
-  - 0.10.30
-    
-before_script:
- # - npm link
- # - mkdir -p shippable/codecoverage
-
-after_success:
-  - echo $TOTO
-  - git remote -v
-  - git config --global user.email "reemjabbar1@yahoo.com"
-  - git config --global user.name "Reem"
- - git checkout master
- - npm version patch
-  - git commit -am "[skip ci] bump version"
- - git log --oneline
-  - git remote set-url origin https://github.com/Reem2016/Backup.git
-  - git push origin master
-#  - npm run coverage
-#  - mv coverage/cobertura-coverage.xml shippable/codecoverage/coverage.xml
-#  - mocha test -R mocha-lcov-reporter  && 
-#  - cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js --verbose
-#  - cat ./coverage/lcov.info | codeclimate
+language: ruby
+rvm:
+ - "1.8.7"
+ - "1.9.2"
+ - "1.9.3"
+ - rbx
+# uncomment this line if your project needs to run something other than `rake`:
+# script: bundle exec rspec spec
