@@ -6,10 +6,20 @@ sudo: required
 before_install:
   # Make sure everything's up to date.
   - sudo apt-get update -qq
+<<<<<<< HEAD
  
+=======
+
+
+>>>>>>> 318be15b54461c8958c8f72f70a869cfc9a23c64
 install:
   # Install Ansible.
   - pip install ansible
 
 script:
+<<<<<<< HEAD
   - ansible-playbook groups.yml
+=======
+  - ansible-playbook users.yml
+
+>>>>>>> 318be15b54461c8958c8f72f70a869cfc9a23c64

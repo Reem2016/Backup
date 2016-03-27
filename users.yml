@@ -12,9 +12,10 @@
       groups=Democrats
 
    - user:
-      uid=201
-      name=Bush
-      comment="George W. Bush"
+      uid=210
+      #name=Bush
+      #comment="George W. Bush"
+      name=reem
       password=istlabs
       groups=Democrats
 
