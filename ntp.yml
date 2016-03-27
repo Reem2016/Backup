@@ -1,5 +1,5 @@
 ---
- - hosts: ntp
+ - hosts: localhost
    user: root
 
    tasks:
