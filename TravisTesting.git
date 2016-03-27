@@ -1,0 +1,14 @@
+---
+ - hosts: localhost
+   user: root
+   connection: /bin/bash
+
+   tasks:
+   - group:
+      gid=501 name=Democrats    state=present
+
+   - group:
+      gid=502 name=Republicans  state=present
+
+   - group:
+      gid=503 name=Independents state=present
