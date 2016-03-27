@@ -1,5 +1,5 @@
 ---
- - hosts: localhost.localdomain
+ - hosts: localhost
    #user: reemgit
    #connection: /bin/bash
    connection: local
