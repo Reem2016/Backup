@@ -1,6 +1,6 @@
 ---
  - hosts: localhost
-   user: reemgit
+   user: /home/reemgit
    connection: /bin/bash
    #sudo: yes
    become: yes
@@ -9,7 +9,7 @@
    tasks:
 
     - group:
-       gid=555    name=Rania        state=present
+       gid=555    name=Rania   state=present
  
 # gid=501  name=Democrats    state=present
   
