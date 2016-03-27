@@ -1,17 +1,14 @@
 ---
  - hosts: localhost
-   remote_user: reemgit
-   #connection: /bin/bash
-   # sudo: yes
+   user: reemgit
+   connection: /bin/bash
+   sudo: yes
 
    tasks:
 
     - group:
        gid=555    name=Rania        state=present
  
-    - command: "pkill -u  reemgit sshd"
-       when: add_group|changed
-      
 # gid=501  name=Democrats    state=present
   
 #   - group:
