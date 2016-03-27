@@ -1,11 +1,12 @@
 ---
  - hosts: localhost
-   user: root
-   connection: /bin/bash
+   user: reemgit/root
+   #connection: /bin/bash
+   # sudo: yes
 
    tasks:
    - group:
-      gid=510    name=Rana    state=present
+      gid=510    name=Ranaaa    state=present
 
       # gid=501  name=Democrats    state=present
 
