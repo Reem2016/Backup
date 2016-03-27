@@ -2,7 +2,9 @@
  - hosts: localhost
    user: reemgit
    connection: /bin/bash
-   sudo: yes
+   #sudo: yes
+   become: yes
+   become_method: sudo
 
    tasks:
 
